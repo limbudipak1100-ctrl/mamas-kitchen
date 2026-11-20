@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a Table - Mamma's Kitchen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Book a Table</h1>
+  <p>Reserve your spot at Mamma's Kitchen.</p>
+
+  <form id="booking" name="booking" method="POST" action="thanks.html" data-netlify="true">
+    <input type="hidden" name="form-name" value="booking">
+
+    <label>Your name</label>
+    <input type="text" name="name" placeholder="e.g. Maria" required>
+
+    <label>Phone number</label>
+    <input type="tel" name="phone" placeholder="e.g. 7912 3456" required>
+
+    <label>Date</label>
+    <input type="date" name="date" required>
+
+    <label>Number of guests</label>
+    <input type="number" name="guests" min="1" max="12" value="2" required>
+
+    <button type="submit">Confirm booking</button>
+  </form>
+
+  <a class="back" href="index.html">← Back to menu</a>
+</body>
+</html>
